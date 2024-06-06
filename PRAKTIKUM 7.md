@@ -19,7 +19,7 @@ SELECT
 ```
 
 ### Hasil
-![Penggabungan_order_Costumers.png](Asett/Penggabungan%20order%20Costumers.png)
+![Penggabungan%20order%20Costumers](Asett/Penggabungan%20order%20Costumers.png)
 
 ### Analisis
 - `SELECT` untuk memilih kolom mana saja Yang ingin ditampilkan dan dari tabel mana kolom tersebut diambil.
