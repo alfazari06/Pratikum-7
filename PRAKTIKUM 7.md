@@ -1,8 +1,8 @@
 # Query 1
 ## Tabel Customers
-![Customers](asets/Customers.png)
+![Customers](Asett/Customers.png)
 ## Tabel Orders
-![Orders](asets/Orders.png)
+![Orders](Asett/Orders.png)
 ## Hasil Penggabungan
 ### Query
 ```SQL
@@ -19,7 +19,7 @@ SELECT
 ```
 
 ### Hasil
-![Penggabungan](asets/Penggabungan_order_Costumers.png)
+![Penggabungan](Asett/Penggabungan%20order%20Costumers.png)
 
 ### Analisis
 - `SELECT` untuk memilih kolom mana saja Yang ingin ditampilkan dan dari tabel mana kolom tersebut diambil.
@@ -47,7 +47,7 @@ SELECT o.OrderID,o.OrderDate,o.CustID,c.CompanyName,c.ContactName,c.City,c.Phone
 c.CustomerID AND c.City="London";
 ```
 ## hasil
-![](aseets/2P.png)
+![](Asett/2P.png)
 ## analisis
 - `SELECT` untuk memilih kolom mana saja yang ingin ditampilkan dan dari tabel mana kolom tersebut diambil.
 - `o.orderID` o merupakan singkatan dari tabel orders, kolom orderID merupakan kolom dari tabel orders yang dipilih untuk ditampilakan.
@@ -71,7 +71,7 @@ SELECT o.OrderID,o.OrderDate,CompanyName,c.ContactName,c.Phone,e.LastName,e.Titl
 = c.CustomerID AND o.EmpID = e.Empld;
 ```
 ## hasil
-![](aseets/3P.png)
+![](Asett/3P.png)
 ## analisis
 - `SELECT` untuk memilih kolom mana saja yang ingin ditampilkan dari tabel mana kolom tersebut diambil.
 - `o.orderID,o.orderDate` kolom orderID dan orderDate dari tabel `o`(orders) dipilih untuk ditampilkan.
@@ -90,7 +90,7 @@ SELECT o.OrderID,o.OrderDate,CompanyName,c.ContactName,c.Phone,e.LastName,e.Titl
 SELECT o.OrderID,o.OrderDate,c.CompanyName,c.ContactName,c.Phone,e.LastName,e.Title FROM orders o,customers c,employees e WHERE o.CustID = c.CustomerID AND o.EmpID = e.Empld AND e.FirstName = "Margaret";
 ```
 ## hasil
-![](aseets/4P.png)
+![](Asett/4P.png)
 ## analisis
 - `SELECT` untuk memilih kolom mana saja yang ingin ditampilkan dari tabel mana kolom tersebut diambil.
 - `o.orderID,o.orderDate` kolom orderID dan orderDate dari tabel `o`(orders) dipilih untuk ditampilkan.
@@ -115,7 +115,7 @@ SELECT orderdetails.OrderID, orderdetails.OrderDate, customerss.CompanyName,
     -> employees.FirstName = "Margaret";
 ```
 ### Hasil
-![f.jpeg](asett/f.jpeg)
+![f.jpeg](Asett/f.jpeg)
 
 ### Analisis 
 1. ` Select`= untuk memili kolom mana saja yang ingin di tampilkan dan dari tabel         mana kolom tersebut diambil
@@ -140,7 +140,7 @@ AND products.ProductID = ordersdetails.ProductID
 order by customers.CustomersID;
 ```
 ### Hasil
-![hasil2.png](asett/hasil2.png)
+![hasil2.png](Asett/hasil2.png)
 ### Analisis
 1. `select` = untuk memilih kolom mana saja yang ingin ditampilkan  dan dari tabel mana kolom tersebut diambil.
 2. `c.customerID ,  c.companyname` = kolom customerID  dan companyname dari tabel c (customers) dipilih untuk ditampilkan.
@@ -167,10 +167,10 @@ select customers.CustomersID,  customers.CompanyName, orders.OrdersID AS OrdiD, 
 ```
 
 ### Hasil
-![hasill1.png](asett/hasill1.png)
-![hasill2.png](asett/hasill2.png)
-![hasill3.png](asett/hasill3.png)
-![hasill4.png](asett/hasill4.png)
+![hasill1.png](Asett/hasill1.png)
+![hasill2.png](Asett/hasill2.png)
+![hasill3.png](Asett/hasill3.png)
+![hasill4.png](Asett/hasill4.png)
 ### Analisis
 1. `SELECT` = untuk memilih kolom mana saja yang ingin ditampilkan dan digabungkan serta dari tabel mana kolom tersebut dipilih
 2. `c. customerID, C. companyName` = kolom customerID dan company Name dari tabel c(customers) dipilih untuk ditampilkan.
@@ -195,7 +195,7 @@ select customers.CustomersID,  customers.CompanyName, orders.OrdersID AS OrdiD, 
 SELECT * FROM order_details;
 ```
 ### Hasil
-![[mada7.png]]
+![mada7.png](Asett/mada7.png)
 ### Analisis
 - `CREATE VIEW odproduct`: Untuk membuat tabel virtual dengan nama odproducts.
 - `AS SELECT`: Untuk memilih kolom-kolom mana saja yang ingin dipilih untuk dimasukkan ke tabel virtual.
@@ -211,7 +211,7 @@ SELECT * FROM order_details;
 SELECT * FROM orderdetails;
 ```
 ### Hasil
-![[mada8.png]]
+![mada8.png](Asett/mada8.png)
 ### Analisis
 - `SELECT`: Untuk memilih kolom mana saja yang ingin ditampilkan dan dihitung.
 - `c.customerID, c.companyName`: Kolom costumerID dan companyName dari tabel c(customers) dipilih untuk ditampilkan.
@@ -232,7 +232,7 @@ SELECT * FROM orderdetails;
 SELECT * FROM costumerid;
 ```
 ### Hasil
-![[mada9.png]]
+![mada9.png](Asett/mada9.png)
 ### Analisis
 - `SELECT`: Untuk memilih kolom mana saja yang ingin ditampilkan dan dibulatkan.
 - `C.customerID, C.companyName`: Kolom customeID dan companyName dari tabel c(customers) dipilih untuk ditampilkan.
